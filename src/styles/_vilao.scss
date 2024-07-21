@@ -1,0 +1,30 @@
+.vilao{display: flex;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/628/901/123/star-wars-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 115vh;
+
+    &__section{
+        max-width: 800px;
+        padding: 5.6vw;
+    }
+
+    footer{
+        p{
+            font-size: 20px;
+        }
+    }
+}
+
+@media(max-width:780px){
+    .vilao{
+        height: 100vh;
+        footer{
+            padding-top: 0;
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+
+}

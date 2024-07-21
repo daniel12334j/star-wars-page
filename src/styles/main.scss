@@ -1,0 +1,79 @@
+@use 'hero';
+@use 'sumario';
+@use 'carousel';
+@use 'vilao';
+@use 'faq';
+
+@font-face {
+    font-family: Starjedi;
+    src: url(../../assets/fontes//starjedi/Starjedi.ttf);
+    
+}
+
+
+
+@font-face {
+    font-family: StarSIMBOL;
+    src: url(../../assets/fontes/stjelogo/Stjldbl1.ttf);
+    font-weight: 700;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    background-color: black;
+    background-image: url('../images/background\ star.png');
+}
+
+
+
+@mixin text($fontSize: 25px) {
+font-size: $fontSize;
+margin: auto auto 10px 5px
+}
+
+.text-big{
+    @include text(60px);
+    font-family:  Starjedi,sans-serif, StarSIMBOL;
+    
+}
+
+.text-mediun{
+    @include text(30px);
+}
+
+.text{
+    @include text;
+    
+}
+
+@media(max-width:780px){
+    
+    @mixin text($fontSize: 10px) {
+        font-size: $fontSize;
+        margin: auto auto 10px 5px
+        }
+        
+        .text-big{
+            @include text(30px);
+            font-family:  Starjedi,sans-serif, StarSIMBOL;
+            
+        }
+        
+        .text-mediun{
+            @include text(15px);
+        }
+        
+        .text{
+            @include text;
+            
+        }
+
+}
+

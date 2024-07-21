@@ -1,0 +1,47 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/capacete.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100%;
+    height: 100vh;
+
+    &__container{
+        
+        .cc{
+        height: 300px;
+        background: transparent;
+        border: 2px solid rgba(255,255,255,0.5);
+        backdrop-filter: blur(4px);
+        border-radius: 15px;
+        display: grid;
+        place-items: center;
+        width: 50vw;
+
+        img{
+            width: 38vw;
+        }
+        }
+
+    }
+
+}
+
+
+
+@media(max-width:780px){
+    .hero{
+        
+        height: 30vh;
+
+        &__container{
+            .cc{
+                height: 90px;
+            }
+        }
+    }
+    
+
+}
